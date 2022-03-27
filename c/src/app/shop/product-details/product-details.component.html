@@ -1,0 +1,103 @@
+<!-- <div class="row" >
+    <div class="col-6">
+        <img src="{{product.pictureUrl}}" alt="{{product.name}}" class="img-fluid w-100">
+    </div>
+    <div class="col-6">
+        <h3>{{product.name}}</h3>
+        <p>{{product.price | currency}}</p>
+        <div class="d-flex justify-content-start align-item-center">
+            <i class="fa fa-minus-circle text-warning mr-2" style="cursor: pointer; font-size: 2em;"></i>
+            <span class="font-weight-bold" style="font-size: 1.5em;">2</span>
+            <i class="fa fa-plus-circle text-warning mx-2" style="cursor: pointer; font-size: 2em;"></i>
+            <button class="btn btn-outline-secondary btn-lg ml-4">Add to Cart</button>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12 ml-3">
+                <h4>Description</h4>
+                <p>{{product.description}}</p>
+            </div>
+        </div>
+    </div>
+
+    
+</div> -->
+
+
+
+
+
+
+
+
+<!-- 8*************************************** -->
+
+
+<div class="row" *ngIf="product">
+  <div class="col-lg-12">
+    <div class="container details-body">
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="row">
+            <div class="col-lg-12 details-img">
+              <img src="{{product.pictureUrl}}" alt="{{product.name}}" class="img-fluid w-100"/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 details-button">
+             
+              <button class="btn btn-success details-button-2 float-right">
+                _Go back
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7"> 
+          <div class="">
+            <h2 class="card-title">{{product.name}}</h2>
+            <ul class="star-rating-style">
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star-half-alt"></i></li>
+              <li><i class="far fa-star"></i></li>
+            </ul>
+
+            <ul class="price-view-style">
+                <li class="price-style">
+                  <h3>{{product.price | currency}}</h3>
+                 
+                </li>
+                <li class="ml-3">   
+                    <div class="d-flex justify-content-start align-item-center">
+                    <i class="fa fa-minus-circle text-warning mr-2" style="cursor: pointer; font-size: 2em;"></i>
+                    <span class="font-weight-bold" style="font-size: 1.5em;">2</span>
+                    <i class="fa fa-plus-circle text-warning mx-2" style="cursor: pointer; font-size: 2em;"></i>
+                   
+                </div>
+            </li>
+                <li class="Checkout-style">
+                  <a
+                  routerLink="/check-out" routerLinkActive="active"
+                    class="btn btn-success hotelCard-button-style float-right ml-4"
+                    >Add to Cart</a
+                  >
+                </li>
+              </ul>
+
+
+          </div>
+  
+
+          <h4>Description</h4>
+          <p>
+            {{product.description}}
+          </p>
+          <h4>Amenities</h4>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
