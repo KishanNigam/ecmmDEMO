@@ -1,0 +1,22 @@
+Start with creating web api project 
+add api controller name > productsController
+adding connection string
+Adding Entity migration 
+Update the db
+Create first get api
+creating additional project (Core and Interface)
+Adding repository methods
+Seed data 
+Adding A code in controller to get Product brand and types
+Working generic repository
+error handling 
+Sorting 
+filtering
+searching 
+Api paging
+create angular project
+add with http with backend
+create ui
+create routing
+create shop module service  and components
+create chield components product details, product Items
